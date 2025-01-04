@@ -20,9 +20,5 @@ var x = setInterval(function() {
   document.querySelector('.second p').innerHTML = hours;
   document.querySelector('.third p').innerHTML = minutes;
   document.querySelector('.fourth p').innerHTML = seconds;
-
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
+  
 }, 1000);
